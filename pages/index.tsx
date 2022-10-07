@@ -10,7 +10,7 @@ import {
   WhatsappIcon,
   WhatsappShareButton,
 } from "next-share"
-import { handleCopyLink, handleSaveImage } from "../service/handle-click"
+import { handleCopyLink, handleSaveImage } from "../service/share.service"
 import { handleWallet } from "../service/wallet"
 
 import sampleImage from "../public/sample-image.png"
