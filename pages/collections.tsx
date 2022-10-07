@@ -4,33 +4,7 @@ import { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
-
-const arrayCollection = [
-  {
-    id: 1,
-    name: "Collection 1",
-    description: "Collection 1 Description",
-    image: "https://picsum.photos/200/300",
-    total: 10,
-    price: 100000,
-  },
-  {
-    id: 2,
-    name: "Collection 2",
-    description: "Collection 2 Description",
-    image: "https://picsum.photos/200/300",
-    total: 10,
-    price: 100000,
-  },
-  {
-    id: 3,
-    name: "Collection 3",
-    description: "Collection 3 Description",
-    image: "https://picsum.photos/200/300",
-    total: 10,
-    price: 100000,
-  },
-]
+import { arrayCollection } from "./api/collections"
 
 const Collection: NextPage = () => {
   return (
