@@ -30,6 +30,16 @@ const Home: NextPage = () => {
       <div className="flex justify-center my-10 text-center">
         <h1 className="text-6xl">Bolafy Share Button</h1>
       </div>
+      <div className="flex justify-center my-8">
+        <a>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={handleWallet}
+          >
+            Wallet
+          </button>
+        </a>
+      </div>
       <div>
         <img id="image" src={sampleImage.src} alt="" crossOrigin="anonymous" />
       </div>
@@ -53,14 +63,6 @@ const Home: NextPage = () => {
         <a>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={handleWallet}
-          >
-            Wallet
-          </button>
-        </a>
-        <a>
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => handleCopyLink()}
           >
             Copy Link
@@ -72,6 +74,11 @@ const Home: NextPage = () => {
             onClick={() => handleSaveImage()}
           >
             Save Image
+          </button>
+        </a>
+        <a href="/collections">
+          <button className="bg-blue-500 h-16 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Collections
           </button>
         </a>
       </div>
